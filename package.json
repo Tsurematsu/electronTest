@@ -1,0 +1,27 @@
+{
+  "name": "electrontest",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "electron-build": "electron-builder -c.extraMetadata.main=build/main.js"
+  },
+  "build": {
+    "appId": "com.tuapp.id",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^32.2.0",
+    "electron-builder": "^25.1.7"
+  }
+}
